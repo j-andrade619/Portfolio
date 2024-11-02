@@ -6,6 +6,7 @@
     <title>Vite App</title>
 </head>
 <body class="m-2 sm:m-4 md:m-6 lgm-8">
+<!--NavBar on top of page -->
 <nav class="rounded-xl border-4 border-blue-200 bg-blue-100">
     <div class="max-w-screen-2xl flex flex-wrap items-center justify-between">
         <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
@@ -46,12 +47,12 @@
 </nav>
 
 <br/>
-
+<!--Jumbotron with About me section and professional headshot picture-->
 <section class="text-gray-600 body-font">
-    <div class="container sm:flex flex-col-reverse mx-auto flex px-5 py-24 md:flex-row items-center">
+    <div class="container sm:flex flex-col-reverse  flex px-5 py-0.5 md:flex-row items-center">
         <div
-                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Jesse Andrade
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-0.5 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mt-8 mb-0.5 font-medium text-gray-900">Jesse Andrade
                 <br class="hidden lg:inline-block">
             </h1>
             <p class="mb-8 leading-relaxed">René Descartes is often credited with being the "Father of Modern
@@ -64,7 +65,7 @@
                 another, in terms of ontological dependence.
             </p>
         </div>
-        <div class="flex flex-col sm:flex-col lg:flex-col">
+        <div class="flex flex-col sm:flex-col lg:flex-col mx-auto">
             <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/400">
             <h4 class="font-bold">Picture of things</h4>
             <p> Description of picture</p>
@@ -73,15 +74,14 @@
 </section>
 
 <br/>
+<!--Socials/Contact information and original photography?-->
+<section class="md:flex flex-row">
 
-<section class="md:flex flex-row flex-grow">
-
-    <div class="container mx-auto px-5 py-24 ">
+    <div class="container mx-auto ">
         <a href="#"
-           class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+           class="block max-w-sm mx-0 p-16 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
 
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                acquisitions 2021</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Connect:</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
                 acquisitions of 2021 so far, in reverse chronological order.</p>
         </a>
@@ -100,6 +100,7 @@
     </div>
 </section>
     <br />
+<!--Carousel gallery-->
 <section>
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
