@@ -1,11 +1,14 @@
 import './index.css'
 import 'flowbite'
 
-function debounce(func, wait = 20, immediate = true) {
+
+
+
+function debounce(func, wait = 30, immediate = true) {
     var timeout;
-    return function () {
+    return function() {
         var context = this, args = arguments;
-        var later = function () {
+        var later = function() {
             timeout = null;
             if (!immediate) func.apply(context, args);
         };
@@ -16,26 +19,22 @@ function debounce(func, wait = 20, immediate = true) {
     };
 }
 
-const sliderImages = document.querySelectorAll('.slide-in');
+const sliderImages = document.querySelectorAll('.slider-image');
 
-
-function checkSlide() {
-    sliderImages.forEach(sliderImage => {
-        // half way through the image
+export function checkstyle() {
+    console.log(sliderImages)
+    sliderImages.forEach (sliderImage => {
+        console.log(sliderImage)
         const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-        //  bottom of the image
         const imageBottom = sliderImage.offsetTop + sliderImage.height;
         const isHalfShown = slideInAt > sliderImage.offsetTop;
         const isNotScrolledPast = window.scrollY < imageBottom;
         if (isHalfShown && isNotScrolledPast) {
-            sliderImage.classList.add('active');
+            sliderImage.classList.add('activate');
         } else {
-            sliderImage.classList.remove('active');
+            sliderImage.classList.remove('activate');
         }
-
-
     });
-
 }
 
-window.addEventListener('scroll', debounce(checkSlide));
+window.addEventListener('scroll', debounce(checkstyle));
