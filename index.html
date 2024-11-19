@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
 </head>
-<body class="m-2 sm:m-4 md:m-6 lgm-8 bg-blend-multiply bg-blue-50">
+<body class="m-2 sm:m-4 md:m-6 lgm-8 bg-blend-multiply bg-orange-300">
 
 
 <!--NavBar on top of page hamburger menu on sm-break-->
 <br/>
 <!--inserted background header in navbar-->
-<nav class="bg-white border-gray-200 dark:bg-gray-900 bg-[url('/docs/header321.png')]">
+<nav class="bg-white border-cyan-500 w-100 border-2 dark:bg-gray-900 bg-[url('/docs/header321.png')] shadow-xl">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="docs/logo.png" class="rounded-full w-10 h-10" alt="LOGO"/>
-        </a>
-        <div class="bg-slate-100">
-            <h2 class="font-bold text-2xl md:text-4xl border-pink-50">Let's Make History</h2>
-        </div>
+        <p class="flex shadow-xl">
+            <img src="docs/logo4.png" class=" border-2 bg-cyan-500 rounded-full w-20 h-20" alt="LOGO"/>
+        </P>
         <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-default" aria-expanded="false">
@@ -32,7 +29,7 @@
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="#"
-                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent shadow-lg">Contact</a>
                 </li>
             </ul>
         </div>
@@ -45,7 +42,7 @@
 <!--hr to create a line between elements for style-->
 <hr/>
 <!--Jumbotron with About me section and professional headshot picture-->
-<section class="text-gray-600 body-font border-2 border-blue-200">
+<section class="text-gray-600 body-font border-2 bg-pink-100 border-cyan-500 shadow-xl rounded-lg">
     <div class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
         <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Jesse Andrade
@@ -60,76 +57,89 @@
     </div>
     <br/><br/>
 </section>
+<br/>
 <section>
-    <div class="container mx-auto flex flex-col space-y-4 md:flex-row md:space-y-0 justify-between py-4 ">
+    <div class="container mx-auto flex flex-col space-y-4 md:flex-row md:space-y-0 justify-between my-3 py-4  ">
         <div class="justify-between">
-<span class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+<span class="block max-w-sm p-6 bg-blue-100 border-2 border-yellow-100 rounded-lg hover:bg-gray-100 shadow-xl">
 
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web Developer</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400">I am a web developer with 1 year of experience building responsive web applications. I work with React and style interfaces using Tailwind CSS and Flowbite. On the back end, I use Node.js with PostgreSQL for efficient data management. I focus on creating clean, functional code and user-friendly designs.</p>
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Veteran</h5>
+    <span class="font-normal text-gray-700 dark:text-gray-400 p-4">
+        <li>Operation Specialist 2nd Class US Navy '99-'07</li>
+    <ul>Operation Natural Fires 2000</ul> <ul>Operation Enduring Freedom 2001</ul><ul> Operation Iraqi Freedom (MIO ops) 2003</ul><ul></ul> Range Safety Officer ACU-5 Camp Pendleton</ul> </span>
 </span>
         </div>
+
         <div>
-<span class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+<span class="block max-w-sm p-6 bg-blue-50-100 border-2 border-yellow-100 rounded-lg shadow-xl hover:bg-gray-100">
 
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Education</h5>
     <p class="font-normal text-gray-700 dark:text-gray-400">
-        <ul class="underline font-semibold py-2">University of New Mexico:</ul><li>BA History </li> <li> BA Political Science</li></ul> <ul class ="underline font-semibold py-2">Central New Mexico Community College</ul><li>Full Stack Web Development</li> <li>BootCamp Certificate of Completion</li></p>
+        <ul class="underline font-semibold py-2">University of New Mexico:</ul><li>BA History </li> <li> BA Political Science</li>
+    </ul>
+    <ul class="underline font-semibold py-2">Central New Mexico Community College</ul><li>Full Stack Web Development</li> <li>BootCamp Certificate of Completion</li>
+    </p>
 </span>
         </div>
-        <div>
-        <span class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <div class="block max-w-sm p-6 bg-blue-100 border-2 border-yellow-100 rounded-lg shadow-xl hover:bg-gray-100">
+        <span>
 
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Stacks and Skills</h5>
     <p class="font-normal text-gray-700 dark:text-gray-400">Gain versatility in the following stacks.</p>
-</span>
+        </span>
+            <div class="flex flex-col md:flex-row justify-between py-4">
+                <div>
+                    <img class="p-1" src="docs/icons8-tailwindcss-48.png" height="48" width="48"/>
+                    <img class="p-1" src="docs/icons8-javascript-50.png" height="50" width="50"/>
+                </div>
+                <div class="p-2">
+                    <img src="docs/icons8-node-js-32.png" height="32" width="32"/>
+                    <img src="docs/icons8-typescript-50.png" height="50" width="50"/>
+                </div>
+                <div class="p-2">
+                    <img src="docs/icons8-react-80.png" height="80" width="80"/>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <br/><br/><br/>
 <section>
-    <div class="container sm:flex flex-col-reverse  flex px-5 py-0.5 md:flex-row items-center">
-        <div class="flex flex-col sm:flex-col lg:flex-col mx-auto">
-            <img class="slider-image leftEffect slide-in" alt="picture" src="docs/PlazaCompressed.JPG" height="400"
-                 width="400"/>
-            <h4 class="font-bold">Picture of things</h4>
-            <p> Description of picture</p>
+    <div class=" border-2 border-yellow-100 rounded-lg shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between ">
+            <div class="border-2 border-yellow-100 rounded-lg shadow-lg m-6 p-6">
+                <img class="slider-image leftEffect slide-in" alt="picture" src="docs/PlazaCompressed.JPG" height="800"
+                     width="800"/>
+            </div>
+            <div>
+
+                <div class="border-2 border-yellow-100 rounded-lg shadow-lg m-6 p-6">
+                    <div>
+                        <p>[sitting in M’s office, looking at M’s china Bulldog ornament with the British flag painted
+                            on its back] James Bond: The whole office goes up in smoke and that bloody thing survives.
+                            M: Your interior decorating tips have always been appreciated, 007. </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-0.5 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mt-8 mb-0.5 font-medium text-gray-900">Writer & Tour Guides
-                <br class="hidden lg:inline-block">
-            </h1>
-            <p class="flex flex-1 mb-8 leading-loose">
-                Projects I like to write and works in progress. Touch on digital history and the reason for more flexibility in the students approach to education as we need to be able to adapt to the modern distribition of information. I also like to work with the students to create a more engaging and engaged learning experience.
-                Digital history provides a platform that allows individuals to display for the world their lens. Whether it be a family history that shows New Mexico lineage through historical records or a personal history that shows the life of a family member. Story telling brings me joy and I would like nothing more than to tell your story. Whether through writing; web sites or showcasing your business. Your story should be beautifully displayed to the world.
-
-            </p>
-        </div>
-    </div>
-
-    <br/><br/><br/>
-
-</section>
-<section>
-    <div class="container sm:flex flex-col-reverse  flex px-5 py-0.5 md:flex-row items-center">
-
-        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-0.5 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mt-8 mb-0.5 font-medium text-gray-900">Photography
-                <br class="hidden lg:inline-block">
-            </h1>
-            <p class="flex flex-1 mb-8 leading-loose">
-           I use a modern approach to capturing the transitional spaces of life. Whether it be on a wedding day where two people become one in name and in thought; or if it's a life experience such as birthdays, holiday events, or
-            </p>
-        </div>
-        <div class="flex flex-col sm:flex-col lg:flex-col mx-auto">
-            <img class="slider-image leftEffect slide-in" alt="picture" src="docs/PlazaCompressed.JPG" height="400"
-                 width="400"/>
-            <h4 class="font-bold">Picture of things</h4>
-            <p> Description of picture</p>
+        <div class="border-2 border-yellow-100 rounded-lg shadow-lg m-6 p-6">
+            <div>
+                <p>[sitting in M’s office, looking at M’s china Bulldog ornament with the British flag painted on its
+                    back] James Bond: The whole office goes up in smoke and that bloody thing survives. M: Your interior
+                    decorating tips have always been appreciated, 007. </p>
+            </div>
         </div>
     </div>
+    <div>
+        <img class="slider-image slide-in" alt="picture" src="docs/PlazaCompressed.JPG" height="400"
+             width="400"/>
+    </div>
+
 
 </section>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
 <!--Socials/Contact information Card -->
 <section class="container mx-auto px-4 py-8">
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
@@ -172,17 +182,6 @@
         </div>
     </div>
 </section>
-<br/>
-<br/>
-<br/>
-
-<!--Writing sample and more original photography; pictures of visual primary sources-->
-</section>
-<br/>
-<hr/>
-<br/>
-
-<br/>
 
 
 <script type="module" src="/src/main.js"></script>
