@@ -4,7 +4,7 @@ import 'flowbite'
 
 
 
-function debounce(func, wait = 30, immediate = true) {
+function debounce(func, wait = 20, immediate = true) {
     var timeout;
     return function() {
         var context = this, args = arguments;
@@ -21,6 +21,14 @@ function debounce(func, wait = 30, immediate = true) {
 
 const sliderImages = document.querySelectorAll('.slider-image');
 
+/**
+ * The function checkstyle is responsible for adding or removing the 'activate' class
+ * from elements in the sliderImages array based on their position during user scroll.
+ * It logs each image and calculates if the image is at least halfway shown and has not
+ * yet been scrolled past, adjusting the class accordingly.
+ *
+ * @return {void} This function does not return a value.
+ */
 export function checkstyle() {
     console.log(sliderImages)
     sliderImages.forEach (sliderImage => {
